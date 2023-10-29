@@ -1,3 +1,5 @@
+![Documentação - Swagger](docs/readme/images/isi_senai.png)
+
 # remote_sensing_satellite_images
 
 Este repositório tem como principal objetivo mostrar uma série de técnicas de visão computacional aplicadas ao sensoreamento remoto em imagens satelitais para realizar tarefas como remoção de ruido em imagens e segmentação de pixels em diferentes cenários. Para isto foram utilizadas uma série bibliotecas tais como rasterio, gdal e earthpy a fim de realizar o tratamento e visualização dos dados satelitais.  
@@ -46,6 +48,7 @@ python3 -m pip install -r requirements.txt
 ```
 ## Tratamento de imagens
 Nesta seção amostra-se o procedimento para responder cada uma das perguntas elaboradas no questionario
+
 
 
 
