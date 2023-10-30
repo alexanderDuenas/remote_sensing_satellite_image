@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from raster_processing import raster_processing_img
 
-def segment_vegetation_hsv_img(path_raster_raw):
+def segment_vegetation_hsv_img(path_raster_raw, output_path):
     
     '''
     Função que tem como objetivo segmentar a classe "vegetação" em imagens satelitais
@@ -51,9 +51,9 @@ def segment_vegetation_hsv_img(path_raster_raw):
         area = values[i, cv2.CC_STAT_AREA] 
         if area > 100:
             componentMask = (label_ids == i).astype("uint8") * 255
-            output = cv2.bitwise_or(output, componentMask)
+            output_mask = cv2.bitwise_or(output, componentMask)
 
-    #cv2.imwrite(out_path, output_mask)
+    cv2.imwrite(output_path+"/output_vegetation_segmentation.png", output_mask)
     
     return output_mask
     
