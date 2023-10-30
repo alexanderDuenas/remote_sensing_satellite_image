@@ -48,6 +48,7 @@ def run(config):
     rgb_img_noise = caminho que contem a imagem rgb com ruido
     ath_seg_silo = caminho que contem a imagem rgb para realizar a segmentação da classe silo
     path_seg_veg = caminho que contem a imagem raster para realizar a segmentação da classe vegetação
+    output = "caminho que contem o folder onde serão salvas as imagens"
     
     '''
     salt_pepper_process(config.rgb_img_noise, config.path_output)
