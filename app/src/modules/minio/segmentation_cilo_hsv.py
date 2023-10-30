@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-def segment_hsv_img(path_image_raw):
+def segment_hsv_img(path_image_raw, output_path):
     
     '''
     Função que tem como objetivo segmentar a estrutura "cilo" em imagens RGB
@@ -55,7 +55,7 @@ def segment_hsv_img(path_image_raw):
             output = cv2.dilate(output, kernel, iterations=1)
             output_mask = cv2.morphologyEx(output, cv2.MORPH_CLOSE, kernel_closing)
 
-    #cv2.imwrite(out_path, output_mask)
+    cv2.imwrite(output_path+"/seg_img_cilo.png", output_mask)
     
     return output_mask
     
