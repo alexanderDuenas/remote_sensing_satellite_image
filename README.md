@@ -1,4 +1,4 @@
-![Documentação - Swagger](docs/readme/images/isi_senai.png)
+![Documentação - Swagger](docs/readme/images/logo_senai.png)
 
 # remote_sensing_satellite_images
 
@@ -47,7 +47,17 @@ Instalar outros requerimentos (OpenCV, Rasterio, gdal, etc), para realizar taref
 python3 -m pip install -r requirements.txt
 ```
 ## Tratamento de imagens
-Nesta seção amostra-se o procedimento para responder cada uma das perguntas elaboradas no questionario
+Nesta seção amostra-se o procedimento para realizar os diferentes processamentos realizados sobre imagens satelitais. 
+
+Para remover o fenómeno chamado de salt & Pepper sobre uma imagem dada, pode executar o seguinte
+
+```
+python3 -m pip install -r requirements.txt
+```
+observe como a partir de um processamento da imagem o ruído é removido. 
+
+![Documentação - Swagger](docs/readme/images/img_ruido.png)
+
 
 
 
