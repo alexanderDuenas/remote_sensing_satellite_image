@@ -62,7 +62,9 @@ observe como a partir de um processamento da imagem o ruído é removido.
 
 ### RGB and raster processing for class segmentation
 
-- Para realizar a segmentação de alguma classe predefinida em imagens satelitais (em formato RGB) considerando técnicas classicas de visão computacional pode ser utilizada a transformação para espaço de cores HSV. Para este caso em particular, foi segmentada a classe silo, observe como a partir da imagem original é criada uma mascara binaria onde os pixels classificados como 1 representam o objeto silo.  
+- Para realizar a segmentação de alguma classe predefinida em imagens satelitais (em formato RGB) considerando técnicas classicas de visão computacional pode ser utilizada a transformação para espaço de cores HSV. Para este caso em particular, foi segmentada a classe silo, observe como a partir da imagem original é criada uma mascara binaria onde os pixels classificados como 1 representam o objeto silo.
+
+
 
 
 
