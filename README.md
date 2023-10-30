@@ -88,13 +88,15 @@ observe como a partir de um processamento da imagem o ruído é removido.
 
   ![Documentação - Swagger](docs/readme/images/seg_veg.png)
 
-  ## Deep learning training model
+## Deep learning training model
 
-  Para realizar o treinamento do modelo foi utilizada uma arquitetura U-net, conforme apresentado anteriormente. O script para realizar o treinamento se descreve a continuação: 
+Para realizar o treinamento do modelo foi utilizada uma arquitetura U-net, conforme apresentado anteriormente. O script para realizar o treinamento se descreve a continuação: 
 
-  ```
+```
 python3 main_train_unet.py --path_folder = caminho que contem o folder com os dados de treinamento e validação --batch_size = Tamanho do batch que será utilizado no treinamento e validação --epochs = numero de épocas que seram utilizadas para realizar o treinamento
 ```
+A continuação podem ser observados alguns dos resultados obtidos atraves do treinamento realizado
+
 
   
 
