@@ -46,8 +46,10 @@ Instalar outros requerimentos (OpenCV, Rasterio, gdal, etc), para realizar taref
 ```
 python3 -m pip install -r requirements.txt
 ```
-## Tratamento de imagens
+## Images processing
 Nesta seção amostra-se o procedimento para realizar os diferentes processamentos realizados sobre imagens satelitais. 
+
+### Salt & Pepper noise Reduction
 
 Para remover o fenómeno chamado de salt & Pepper sobre uma imagem dada, pode executar o seguinte
 
@@ -56,7 +58,12 @@ python3 -m pip install -r requirements.txt
 ```
 observe como a partir de um processamento da imagem o ruído é removido. 
 
-![Documentação - Swagger](docs/readme/images/img_ruido.png)
+![Documentação - Swagger](docs/readme/images/img_ruido_sp.png)
+
+### RGB and raster processing for class segmentation
+
+- Para realizar a segmentação de alguma classe predefinida em imagens satelitais (em formato RGB) considerando técnicas classicas de visão computacional pode ser utilizada a transformação para espaço de cores HSV. Para este caso em particular, foi segmentada a classe silo, observe como a partir da imagem original é criada uma mascara binaria onde os pixels classificados como 1 representam o objeto silo.  
+
 
 
 
