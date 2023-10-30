@@ -97,7 +97,7 @@ python3 main_train_unet.py --path_folder = caminho que contem o folder com os da
 ```
 A continuação podem ser observados alguns dos resultados obtidos atraves do treinamento realizado
 
-
+![Documentação - Swagger](docs/readme/images/treinamento_unet_results.png)
   
 
 
