@@ -44,7 +44,7 @@ Sobre instalar as bibliotecas de CUDA and CudNN para realizar treinamentos com G
 Instalar outros requerimentos (OpenCV, Rasterio, gdal, etc), para realizar tarefas de tratamento das imagens satelitais, assim como processamento das imagens utilizadas: 
 
 ```
-python3 -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 ## Images processing
 Nesta seção amostra-se o procedimento para realizar os diferentes processamentos realizados sobre imagens satelitais. 
@@ -54,7 +54,7 @@ Nesta seção amostra-se o procedimento para realizar os diferentes processament
 Para remover o fenómeno chamado de salt & Pepper sobre uma imagem dada, pode executar o seguinte
 
 ```
-python3 -m pip install -r requirements.txt
+script
 ```
 observe como a partir de um processamento da imagem o ruído é removido. 
 
