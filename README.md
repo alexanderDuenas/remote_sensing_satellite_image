@@ -79,9 +79,22 @@ observe como a partir de um processamento da imagem o ruído é removido.
   A partir do raster carregado no Rasterio é possível extrair todas as bandas, observe que para este caso o raster contem um numero total de 8 bandas
 
   ![Documentação - Swagger](docs/readme/images/divisao_raster_bandas.png)
-  
+
+  Depois, com a premissa de que as bandas 4, 3, e 2 representam os canais R, G, B respetivamente, realiza-se um procedimento de união delas, o resultado é ilustrado a seguir: 
+
+   ![Documentação - Swagger](docs/readme/images/raster_to_rgb.png)
+
+  Por fim, a partir da imagem RGB gerada, é realizada a segmentação da classe vegetação a partir da transformação para o espaço de cores HSV, conforme apresentado na segmentação da classe silo.
 
   ![Documentação - Swagger](docs/readme/images/seg_veg.png)
+
+  ## Deep learning training model
+
+  Para realizar o treinamento do modelo foi utilizada uma arquitetura U-net, conforme apresentado anteriormente. O script para realizar o treinamento se descreve a continuação: 
+
+  ```
+python3 main_train_unet.py --path_folder = caminho que contem o folder com os dados de treinamento e validação --batch_size = Tamanho do batch que será utilizado no treinamento e validação --epochs = numero de épocas que seram utilizadas para realizar o treinamento
+```
 
   
 
