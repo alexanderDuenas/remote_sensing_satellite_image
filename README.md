@@ -48,14 +48,18 @@ pip install -r requirements.txt
 ```
 ## Images processing
 Nesta seção amostra-se o procedimento para realizar os diferentes processamentos realizados sobre imagens satelitais. 
+O script principal que deve ser executado se mostra a seguir: 
+
+```
+python3 main_images_processing.py  --rgb_img_noise = "caminho que contem a imagem rgb com ruido" --ath_seg_silo = "caminho que contem a imagem rgb para realizar a segmentação da classe silo"
+    --path_seg_veg = "caminho que contem a imagem raster para realizar a segmentação da classe vegetação" --output = "caminho que contem o folder onde serão salvas as imagens"
+```
 
 ### Salt & Pepper noise Reduction
 
-Para remover o fenómeno chamado de salt & Pepper sobre uma imagem dada, pode executar o seguinte
+Para remover o fenómeno chamado de salt & Pepper sobre uma imagem dada, pode executar o seguinte script
 
-```
-script
-```
+
 observe como a partir de um processamento da imagem o ruído é removido. 
 
 ![Documentação - Swagger](docs/readme/images/img_ruido_sp.png)
