@@ -64,7 +64,20 @@ observe como a partir de um processamento da imagem o ruído é removido.
 
 - Para realizar a segmentação de alguma classe predefinida em imagens satelitais (em formato RGB) considerando técnicas classicas de visão computacional pode ser utilizada a transformação para espaço de cores HSV. Para este caso em particular, foi segmentada a classe silo, observe como a partir da imagem original é criada uma mascara binaria onde os pixels classificados como 1 representam o objeto silo.
 
+  ![Documentação - Swagger](docs/readme/images/seg_silo.png)
 
+- Para realizar a segmentação de alguma classe predefinida em rasters satelitais (em formato .tif) contendo um número determinado de bandas primeiro deve ser realizado um pre-processamento do raster para separar cada uma de essas bandas. Para este caso foi utilizada a biblioteca [Rasterio](https://rasterio.readthedocs.io/en/stable/) para realizar o tratamento dos rasters.  
+
+  ![Documentação - Swagger](docs/readme/images/raster_io_images.png)
+
+  A partir do raster carregado no Rasterio é possível extrair todas as bandas
+
+  ![Documentação - Swagger](docs/readme/images/divisao_raster_bandas.png)
+  
+
+  ![Documentação - Swagger](docs/readme/images/seg_veg.png)
+
+  
 
 
 
