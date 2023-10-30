@@ -55,6 +55,8 @@ python3 main_images_processing.py  --rgb_img_noise = "caminho que contem a image
     --path_seg_veg = "caminho que contem a imagem raster para realizar a segmentação da classe vegetação" --output = "caminho que contem o folder onde serão salvas as imagens"
 ```
 
+Os resultados serão discutidos a continuação:
+
 ### Salt & Pepper noise Reduction
 
 Para remover o fenómeno chamado de salt & Pepper sobre uma imagem dada, pode executar o seguinte script
@@ -74,7 +76,7 @@ observe como a partir de um processamento da imagem o ruído é removido.
 
   ![Documentação - Swagger](docs/readme/images/raster_io_images.png)
 
-  A partir do raster carregado no Rasterio é possível extrair todas as bandas
+  A partir do raster carregado no Rasterio é possível extrair todas as bandas, observe que para este caso o raster contem um numero total de 8 bandas
 
   ![Documentação - Swagger](docs/readme/images/divisao_raster_bandas.png)
   
